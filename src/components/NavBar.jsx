@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import MyImage from '../assets/logo/transparent-bg-white.png';
 
 
 export default function NavBar() {
@@ -16,7 +17,9 @@ export default function NavBar() {
                     <div className="relative flex items-center justify-between h-16">
                         {/* Logo/Title */}
                         <div className="flex-1 flex items-center justify-start sm:items-stretch sm:justify-start">
-                            <div className="text-white text-lg font-bold">WANDIE INNOCENT</div>
+                                <div className="flex items-start justify-start ">
+                                    <img src={MyImage} alt="Description" className="w-[60%] sm:w-[40%]" />
+                                </div>
                         </div>
 
                         {/* Mobile Menu Button */}
