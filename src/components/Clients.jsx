@@ -65,16 +65,17 @@ export default function Clients() {
 
             </section>
 
-            <div className="overflow-hidden py-8 bg-gray-50">
+            {/* slider logos */}
+            <div className="overflow-hidden py-8 bg-gray-50 ">
                 <div
                     ref={sliderRef}
-                    className="flex space-x-8 overflow-x-scroll no-scrollbar items-center px-4"
+                    className="flex space-x-8 overflow-x-scroll no-scrollbar items-center px-4 "
                     style={{ scrollBehavior: "smooth" }}
                 >
                     {logos.map((logo, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 w-40 h-40 bg-white rounded-lg shadow-md flex justify-center items-center p-4"
+                            className="flex-shrink-0 w-40 h-40 bg-white rounded-lg shadow-md flex justify-center items-center p-4 "
                         >
                             <img
                                 src={logo}
@@ -85,6 +86,9 @@ export default function Clients() {
                     ))}
                 </div>
             </div>
+
+
+            
 
 
         </>
