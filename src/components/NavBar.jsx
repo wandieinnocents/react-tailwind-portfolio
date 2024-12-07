@@ -17,9 +17,9 @@ export default function NavBar() {
                     <div className="relative flex items-center justify-between h-16">
                         {/* Logo/Title */}
                         <div className="flex-1 flex items-center justify-start sm:items-stretch sm:justify-start">
-                                <div className="flex items-start justify-start ">
-                                    <img src={MyImage} alt="Description" className="w-[60%] sm:w-[40%]" />
-                                </div>
+                            <div className="flex items-start justify-start ">
+                                <img src={MyImage} alt="Description" className="w-[60%] sm:w-[40%]" />
+                            </div>
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -51,13 +51,13 @@ export default function NavBar() {
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium active:bg-red-500"
                                 >
                                     <i className="fa-solid fa-house mr-1"></i> Home
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/about"
                                     className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium active:bg-red-500"
                                 >
                                     <i class="fa-solid fa-circle-info"></i> About
@@ -75,13 +75,13 @@ export default function NavBar() {
                                     {isDropdownOpen && (
                                         <div className="absolute left-0 mt-2 bg-gray-700 text-white rounded-md shadow-lg">
                                             <a
-                                                href="#"
+                                                href="/photos"
                                                 className="block px-4 py-2 hover:bg-gray-600"
                                             >
                                                 Photos
                                             </a>
                                             <a
-                                                href="#"
+                                                href="/videos"
                                                 className="block px-4 py-2 hover:bg-gray-600"
                                             >
                                                 Videos
@@ -92,7 +92,7 @@ export default function NavBar() {
                                 </div>
 
                                 <a
-                                    href="#"
+                                    href="/contact"
                                     className="text-white bg-blue-700 hover:bg-red-700 px-3 py-2 rounded-md text-sm font-medium hover:ring-2 hover:ring-offset-2 hover:ring-orange-500"
                                 >
                                     <i class="fa-solid fa-phone"></i> Contact

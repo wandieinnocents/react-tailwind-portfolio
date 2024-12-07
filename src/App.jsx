@@ -1,32 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import NavBar from './components/NavBar';
-import HomeBanner from './components/HomeBanner';
-import Services from './components/Services';
-import Testimonials from './components/Testimonials';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import About from './pages/About';
+import Photos from './pages/Photos';
+import Videos from './pages/Videos';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import Clients from './components/Clients';
 
 
 function App() {
 
     return (
-        <>
-            {/* nav */}
-            <NavBar />
 
-            {/* hero */}
-            <HomeBanner />
 
-            {/* services  */}
-            <Services />
+        <Router>
+            <div>
+                {/* Navigation Menu */}
+                <NavBar />
+               
 
-            <Testimonials />
-            <Clients />
-            <Footer />
+                {/* Route Configurations */}
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/photos" element={<Photos />} />
+                    <Route path="/videos" element={<Videos />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
 
-        </>
+                
+
+                 {/* Footer */}
+                 <Footer />
+            </div>
+        </Router>
+
+
+
 
 
     )
